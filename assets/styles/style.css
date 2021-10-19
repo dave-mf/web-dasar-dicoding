@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 10px 0;
+    color: #38e9bb;
+}
+nav ul{
+    display: flex;
+    font-size: 0.9em;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+nav ul li a{
+    color: #38e9bb;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+.logo{
+    margin: 10px 0;
+}
+/* end navbar */
+
+/* Jumbotron */
+.jumbotron{
+    padding: 60px;
+}
+.keterangan{
+    float: left;
+    font-size: 1.1em;
+    width: 55%;
+    color: rgb(48, 47, 44);
+}
+.keterangan_landing{
+    float: left;
+    font-size: 1.3em;
+    width: 55%;
+    color: rgb(48, 47, 44);
+}
+.keterangan_landing p{
+    font-size: 0.7em;
+}
+.ketgam{
+    float: right;
+    width: 45%;
+}
+.ketgam img{
+    width: 600px;
+}
+.buttonket{
+    width: 100px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #38e9bb;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+}
+.buttonket a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: white;
+}
+.buttonket:hover{
+    background-color: rgb(37, 197, 122);
+    color: white;
+    cursor: pointer;
+}
+/* end jumbotron */
+
+/* wisata */
+main{
+    margin-top: 440px;
+    color: rgb(48, 47, 44);
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+.featured-image{
+    width: 100%;
+    max-height: 190px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+.keterangan_kanan{
+    float: right;
+    font-size: 1.2em;
+    width: 45%;
+    color: rgb(48, 47, 44);
+}
+article a{
+    color: #38e9bb;
+}
+.ketgam_kiri{
+    float: left;
+    width: 45%;
+}
+.ketgam_kiri img{
+    width: 600px;
+}
+.space{
+    margin-top: 400px;
+}
+.img-circle{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 5px 4px 5px 0 rgba(0, 0, 0, 0.2);
+}
+footer {
+    padding: 14px;
+    color: white;
+    background-color: #38e9bb;
+    text-align: center;
+    margin-top: 450px;
+}
+.space h2{
+    padding: 30px;
+}
+aside{
+    margin-top: 70px;
+}
+
+/* Responsive */
+@media screen and (max-width:576px){
+    nav {
+        padding: 5px;
+        position: sticky;
+        top: 0;
+        width: 4%;
+    }
+    nav li{
+        display: inline;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    .logo{
+        margin: 10px 0;
+        width: 0%;
+        display: none;
+    }
+    .keterangan_landing{
+        font-size: 0.8em;
+        width: 100%;
+    }
+    .ketgam,
+    .ketgam img{
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .ketgam_kiri,
+    .ketgam_kiri img{
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .container{
+        flex-direction: column;
+        width: 90%;
+    }
+    .box{
+        margin-top: 20px;
+    }
+    .keterangan_kanan{
+        font-size: 0.9em;
+        width: 100%;
+    }
+    .space h2{
+        font-size: 0.9em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .keterangan{
+        width: 100%;
+        font-size: 0.9em;
+        margin: 0 auto;
+    }
+    footer{
+        font-size: 0.9em;
+    }
+}
